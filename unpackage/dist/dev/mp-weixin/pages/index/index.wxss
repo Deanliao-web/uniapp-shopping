@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/**index.wxss**/
+/* 引入阿里图标库 */
+@font-face {
+  font-family: 'iconfont';  /* project id 2414442 */
+  src: url('https://at.alicdn.com/t/font_2414442_vkhwulfaqq.eot');
+  src: url('https://at.alicdn.com/t/font_2414442_vkhwulfaqq.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_2414442_vkhwulfaqq.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/font_2414442_vkhwulfaqq.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_2414442_vkhwulfaqq.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_2414442_vkhwulfaqq.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-arrowRight-copy:before {
+  content: "\e68b";
+}
+.icon-13:before {
+  content: "\e60d";
+}
+.icon-chaye:before {
+  content: "\e639";
+}
+.icon-shouzhuo:before {
+  content: "\e608";
+}
+.icon-shouye:before {
+  content: "\e652";
+}
+.index {
+  height: 85px;
+  background-color: #eb4935;
+  position: relative;
+}
+.titlebar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.scrollGrop {
+  width: 90%;
+  height: 20px;
+  margin-top: 50px;
+  color: white;
+}
+scroll-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  /* 设置文本不换行 */
+  white-space: nowrap;
+}
+scroll-view view {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+scroll-view view text:hover {
+  font-size: 18px;
+}
+.arrow {
+  width: 20px;
+  height: 20px;
+  background-color: #eb4935;
+  color: white;
+  margin-left: 8px;
+}
+.taplist {
+  height: 220px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  position: absolute;
+  z-index: 10;
+}
+/* 下拉菜单样式 */
+.tapdetails {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  white-space: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  text-align: center;
+}
+.tapdetails text {
+  line-height: 30px;
+  font-size: 12px;
+  display: block;
+  height: 30px;
+  width: 60px;
+  color: #262626;
+  margin: 10px 0px 0px 10px;
+  -webkit-flex-basis: 20%;
+          flex-basis: 20%;
+  background-color: rgba(38, 38, 38, 0.1);
+  border-radius: 20px;
+}
+.tapdetails text:hover {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+.goods {
+  height: 150px;
+  margin-top: 30px;
+}
+.goods > ._p > ._span {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+.goods_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 80%;
+}
+.goods_list {
+  width: 80px;
+  color: #f2270c;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-weight: bold;
+}
+.area {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.areaFont:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+.itemsList {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-basis: 4%;
+          flex-basis: 4%;
+  text-align: center;
+  background-color: #F4F4F4;
+}
+.itemsList > view:not(:first-child):not(:nth-child(2)) {
+  margin-top: 8px;
+}
+.itemsList > view {
+  width: 40%;
+  border: 1px solid white;
+  margin-left: 8px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.itemsList .itemsDet {
+  text-align: left;
+  margin-left: 5px;
+}
+.itemsDet > ._p:first-child {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.swiper {
+  height: 330rpx;
+  width: 100% !important;
+  margin-top: 25rpx;
+}
+.swiper .swiper-item,
+.swiper .swiperimage {
+  width: 100%;
+  height: 100%;
+}
+

@@ -1,0 +1,1 @@
+.search_title{font-size:18px;margin-left:30rpx;color:#333}.search_content{border-bottom:1px solid #f8f8f8;font-size:14px;margin-left:30rpx;height:80rpx;line-height:80rpx}.search_name{display:block;width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

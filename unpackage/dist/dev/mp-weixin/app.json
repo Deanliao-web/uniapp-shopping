@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/list/list",
+    "pages/my/my",
+    "pages/recommends/recommends",
+    "pages/searchbox/searchbox",
+    "pages/details/details"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "ZH购物",
+    "navigationBarBackgroundColor": "#eb4935",
+    "backgroundColor": "#f4f4f4"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "color": "#333",
+    "selectedColor": "#f00",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "./static/home.png",
+        "selectedIconPath": "./static/home-active.png"
+      },
+      {
+        "text": "分类",
+        "pagePath": "pages/list/list",
+        "iconPath": "./static/message.png",
+        "selectedIconPath": "./static/message-active.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/cart/cart",
+        "iconPath": "./static/cart.png",
+        "selectedIconPath": "./static/cart-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/my/my",
+        "iconPath": "./static/me_disable.png",
+        "selectedIconPath": "./static/me_enable.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "my-recommends": "/pages/recommends/recommends",
+    "my-search": "/common/search",
+    "my-goods": "/common/mygoods",
+    "my-address": "/common/myaddress",
+    "my-settle": "/common/mysettle",
+    "my-login": "/common/mylogin",
+    "my-userinfo": "/common/userinfo",
+    "my-order": "/common/order"
+  },
+  "sitemapLocation": "sitemap30.json"
+}

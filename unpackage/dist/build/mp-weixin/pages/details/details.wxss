@@ -1,0 +1,1 @@
+.pic{margin-left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);width:400rpx;height:400rpx}.price{color:#f2270c;margin-left:20px;font-weight:700}.price .price_up{font-size:18px}.price .price_low{font-size:14px}.content1, .content2{margin-left:20px}.content2{padding-bottom:50px}.details_nav{position:fixed;bottom:0;left:0;width:100%}
